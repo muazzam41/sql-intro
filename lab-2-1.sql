@@ -1,6 +1,11 @@
 -- What teams in history have won more than 100 games in a single
 -- season, chronologically?
 
+SELECT YEAR, NAME, WINS FROM TEAMS
+WHERE WINS > 100
+ORDER BY YEAR
+
+
 -- Expected result: 92 rows, ending with
 --
 -- | 2016 | Chicago Cubs           | 103  |
